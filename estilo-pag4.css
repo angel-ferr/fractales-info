@@ -1,0 +1,206 @@
+body {
+    background-color: rgb(73, 63, 49);}
+
+/* Estilo de los botones dentro de la caja */
+.Botones, .Botones-2 {
+    background-color: rgba(124, 79, 12, 0.664);
+    display: flex;
+    justify-content: center; /* Alinea los botones horizontalmente */
+    border: 2px solid #5e0202; /* Borde blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin: 20px 0; /* Margen superior e inferior */
+    width: 100%; /* Ocupa el 100% del ancho */
+}
+
+/*Este es el coigo del boton */
+.Botones {
+    display: flex;
+}
+
+/*Tamaño y edición de cada boton*/
+.Pagina {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    transition: 1s all ease;
+}
+
+/*Color del boton al momento de pasar el mause*/
+.Pagina:hover {
+    flex: 2;
+    background-color: rgb(221, 166, 62);
+}
+
+/*extencion del boton en el ancho de la pagina*/
+.Botones {
+    width: 100%;
+    text-align: center;
+}
+
+/*Este es el coigo del boton 2 */
+.Botones-2 {
+    display: flex;
+}
+
+/*Tamaño y edición de cada boton 2*/
+.Pagina2 {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    background-color: rgb(223, 134, 0);
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    transition: 1s all ease;
+    text-align: center;
+}
+
+/*Color del boton 2 al momento de pasar el mause*/
+.Pagina2:hover {
+    flex: 2;
+    background-color: rgba(153, 32, 16, 0.514);
+}
+
+/*extencion del boton 2 en el ancho de la pagina*/
+.Botones-2 {
+    width: 100%;
+}
+
+.Botones .Pagina {
+    text-decoration: none; /* Quita el subrayado */
+    margin: 0 10px; /* Espacio entre los botones */
+}
+
+/* Estilo del logo en la esquina inferior derecha */
+.logo {
+    position: fixed; /* Fija la imagen en la pantalla */
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 20px; /* Distancia desde el borde derecho */
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.diseños-imgs img{
+    width: 200px; /* Tamaño pequeño */
+    height: auto; /* Mantiene proporción */
+    margin: 5px; /* Espaciado entre imágenes */
+    display: inline-block; /* Alineación en línea */
+}
+/* Cuadro de imagenesde el apartado elaboración*/
+.diseños-imgs {
+    background-color: #333;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    color: #f1f1f1;
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.diseños-imgs h2{
+background-color: gray;
+}
+
+.resumen{
+    background-color: #333;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    color: #f1f1f1;
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.resumen h2{
+    background-color: gray;
+}
+
+.resumen p{
+    background-color: gray;
+}
+
+/* Cuadro de información */
+.elaborar-imgs {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    color: #f1f1f1;
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.elaborar-imgs img{
+    width: 190px; /* Tamaño pequeño */
+    height: auto; /* Mantiene proporción */
+    margin: 10px; /* Espaciado entre imágenes */
+    display: inline-block; /* Alineación en línea */
+}
+
+.elaborar-imgs h2{
+    background-color: gray;
+}
+
+/* Cuadro de imagenesde el apartado elaboración*/
+.fractal-mp4 {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    color: #f1f1f1;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fractal-mp4 h2{
+    background-color: gray;
+}
+
+
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Para dispositivos con pantallas más pequeñas (tabletas y teléfonos) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%; /* Aumenta el ancho de los contenedores */
+    }
+}
+
+/* Para dispositivos muy pequeños (móviles) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 5px; /* Reducir tamaño de fuente */
+    }
+
+    .container {
+        width: 100%; /* El contenedor ocupa todo el ancho */
+    }
+}
