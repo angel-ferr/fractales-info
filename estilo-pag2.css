@@ -1,0 +1,251 @@
+body{
+    background-color: rgb(73, 63, 49);}
+
+/* Estilo de los botones dentro de la caja */
+.Botones, .Botones-2 {
+    background-color: rgba(124, 79, 12, 0.664);
+    display: flex;
+    justify-content: center; /* Alinea los botones horizontalmente */
+    border: 2px solid #5e0202; /* Borde blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin: 20px 0; /* Margen superior e inferior */
+    width: 100%; /* Ocupa el 100% del ancho */
+}
+
+/*Este es el coigo del boton */
+.Botones {
+    display: flex;
+}
+/*extencion del boton en el ancho de la pagina*/
+.Botones {
+    width: 100%;
+}
+
+.Botones .Pagina {
+    text-decoration: none; /* Quita el subrayado */
+    margin: 0 10px; /* Espacio entre los botones */
+    text-align: center;
+}
+
+/*Este es el coigo del boton 2 */
+.Botones-2 {
+    display: flex;
+}
+
+/*extencion del boton 2 en el ancho de la pagina*/
+.Botones-2 {
+    width: 100%;
+}
+
+/*Tamaño y edición de cada boton*/
+.Pagina {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    transition: 1s all ease;
+}
+
+/*Color del boton al momento de pasar el mause*/
+.Pagina:hover {
+    flex: 2;
+    background-color: rgb(221, 166, 62);
+}
+
+/*Tamaño y edición de cada boton 2*/
+.Pagina2 {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    background-color: rgb(223, 134, 0);
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    transition: 1s all ease;
+    text-align: center;
+}
+
+/*Color del boton 2 al momento de pasar el mause*/
+.Pagina2:hover {
+    flex: 2;
+    background-color: rgba(153, 32, 16, 0.514);
+}
+
+/* Estilo del logo en la esquina inferior derecha */
+.logo {
+    position: fixed; /* Fija la imagen en la pantalla */
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 20px; /* Distancia desde el borde derecho */
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.text {
+    font-size: 8rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url('https://images.unsplash.com/photo-1732535725600-f805d8b33c9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    background-size: 200%; /* Enlarged for smooth animation */
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+    text-align: center;
+    
+}
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.bloque-info1{
+    background-color: #3a2a1e;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 55%;
+    float: left;
+}
+
+.bloque-info1 h2{
+    color: #ffffff;
+    background-color: #574b4b;
+    margin-bottom: 10px;
+}
+
+.bloque-info1 p{
+    color: #ffffff;
+    line-height: 1.5;
+    background-color: #574b4b;
+    
+}
+.pic3{
+    margin-right: 10px;
+    width: 40%;
+    height: 40%;
+    justify-content: space-between;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.bloque2{
+    background-color: #3a2a1e;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    float: right;
+}
+
+.bloque2 h2{
+    color:#f0f0f0;
+    margin-bottom: 10px;
+    background-color: #574b4b;
+}
+
+.bloque2 p{
+    color: #ffffff;
+    line-height: 1.5;
+    background-color: #574b4b;
+}
+
+.bloque2 img{
+    margin-right: 10px;
+    width: 60%;
+    height: auto;
+    justify-content: space-between;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+/* El bloque 3 sirve para el borde del video*/
+.bloque3{
+    background-color: #3a2a1e; 
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    float: right;
+    justify-content: space-between;
+    color: #f0f0f0;
+    text-align: center;
+}
+.bloque3 h2{
+    background-color: #574b4b;
+}
+/* Es para el video*/
+#video {
+    display: block; /* Asegura que sea un elemento en bloque */
+    margin: 20px auto; /* Centrado horizontalmente con márgenes */
+    width: 85%; /* Ajusta el ancho */
+    height: 500px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.bloque4{
+    background-color: #3a2a1e;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    float: inline-end;
+}
+
+.bloque4 h2{
+    color:#f0f0f0;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #574b4b;
+}
+
+.bloque4 img {
+    width: 190px; /* Tamaño pequeño */
+    height: auto; /* Mantiene proporción */
+    margin: 5px; /* Espaciado entre imágenes */
+    display: inline-block; /* Alineación en línea */
+}
+
+/* Para dispositivos con pantallas más pequeñas (tabletas y teléfonos) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%; /* Aumenta el ancho de los contenedores */
+    }
+}
+
+/* Para dispositivos muy pequeños (móviles) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px; /* Reducir tamaño de fuente */
+    }
+
+    .container {
+        width: 100%; /* El contenedor ocupa todo el ancho */
+    }
+}
